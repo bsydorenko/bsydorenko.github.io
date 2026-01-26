@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#58a6ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Bug body -->
+  <ellipse cx="32" cy="38" rx="16" ry="20" fill="url(#grad)"/>
+  <!-- Bug head -->
+  <circle cx="32" cy="14" r="10" fill="url(#grad)"/>
+  <!-- Antennae -->
+  <path d="M26 6 L22 0" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M38 6 L42 0" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <!-- Eyes -->
+  <circle cx="28" cy="12" r="3" fill="#0d1117"/>
+  <circle cx="36" cy="12" r="3" fill="#0d1117"/>
+  <!-- Legs left -->
+  <path d="M16 28 L6 22" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 38 L4 38" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 48 L6 54" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <!-- Legs right -->
+  <path d="M48 28 L58 22" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 38 L60 38" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 48 L58 54" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <!-- Shell lines -->
+  <path d="M32 20 L32 56" stroke="#0d1117" stroke-width="2" opacity="0.3"/>
+  <path d="M22 30 Q32 35 42 30" stroke="#0d1117" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M20 42 Q32 48 44 42" stroke="#0d1117" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>
