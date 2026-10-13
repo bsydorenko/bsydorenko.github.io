@@ -30,14 +30,9 @@
 		}
 	}
 
-	function getPreferredTheme(win) {
-		if (typeof win.matchMedia !== "function") {
-			return THEME_LIGHT;
-		}
-
-		return win.matchMedia("(prefers-color-scheme: dark)").matches
-			? THEME_DARK
-			: THEME_LIGHT;
+	// Dark is the default until the visitor picks a theme.
+	function getPreferredTheme() {
+		return THEME_DARK;
 	}
 
 	function applyTheme(root, toggle, theme) {

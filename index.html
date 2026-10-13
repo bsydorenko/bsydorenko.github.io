@@ -11,9 +11,8 @@
 		content="Senior QA Engineer, Full-Stack Testing, QA Automation, Playwright, Appium, TypeScript, JavaScript, Python, Postman, API Testing, Mobile Testing, Embedded Testing, CI/CD, AI-assisted testing, Claude Code, Bohdan Sydorenko">
 	<meta name="author" content="Bohdan Sydorenko">
 	<meta name="robots" content="index, follow">
-	<meta name="color-scheme" content="light dark">
-	<meta name="theme-color" content="#0c0d0d" media="(prefers-color-scheme: dark)">
-	<meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
+	<meta name="color-scheme" content="dark light">
+	<meta name="theme-color" content="#0c0d0d">
 	<link rel="canonical" href="https://bsydorenko.github.io/">
 
 	<meta property="og:type" content="profile">
@@ -45,13 +44,9 @@
 		(function () {
 			try {
 				var t = localStorage.getItem("site-theme");
-				if (t !== "dark" && t !== "light") {
-					t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-						? "dark"
-						: "light";
-				}
+				if (t !== "dark" && t !== "light") { t = "dark"; }
 				document.documentElement.setAttribute("data-theme", t);
-			} catch (e) { /* non-fatal */ }
+			} catch (e) { document.documentElement.setAttribute("data-theme", "dark"); }
 		})();
 	</script>
 
