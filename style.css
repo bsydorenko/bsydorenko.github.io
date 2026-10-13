@@ -21,8 +21,6 @@
 	--line-strong: #d3d5d1;
 	--accent: #0b7a55;
 	--accent-soft: rgba(11, 122, 85, 0.1);
-	--new: #6d28d9;
-	--new-soft: rgba(109, 40, 217, 0.1);
 	--topbar-bg: rgba(251, 251, 250, 0.82);
 }
 
@@ -36,8 +34,6 @@
 	--line-strong: #333734;
 	--accent: #4fd1a1;
 	--accent-soft: rgba(79, 209, 161, 0.12);
-	--new: #c4b5fd;
-	--new-soft: rgba(196, 181, 253, 0.12);
 	--topbar-bg: rgba(12, 13, 13, 0.8);
 }
 
@@ -221,7 +217,7 @@ ul {
 
 /* ---------- Hero ---------- */
 .hero {
-	padding: 88px 0 56px;
+	padding: 64px 0 40px;
 	border-bottom: 1px solid var(--line);
 }
 
@@ -267,7 +263,7 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
-	margin-top: 28px;
+	margin-top: 24px;
 }
 
 .btn {
@@ -305,44 +301,16 @@ ul {
 	color: var(--text-strong);
 }
 
-.cta-note {
-	margin-top: 12px;
-	font-size: 0.85rem;
-	color: var(--text-muted);
-}
 
-.glance {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 0;
-	margin: 40px 0 0;
-	border-top: 1px solid var(--line);
-}
 
-.glance > div {
-	padding: 14px 16px 0 0;
-}
 
-.glance dt {
-	font-family: var(--font-mono);
-	font-size: 0.72rem;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: var(--text-muted);
-}
 
-.glance dd {
-	margin: 4px 0 0;
-	font-size: 0.925rem;
-	font-weight: 500;
-	color: var(--text-strong);
-}
 
 /* ---------- Sections ---------- */
 .section {
 	display: grid;
 	grid-template-columns: var(--gutter) minmax(0, 1fr);
-	padding: 56px 0;
+	padding: 40px 0;
 	border-bottom: 1px solid var(--line);
 }
 
@@ -357,21 +325,32 @@ ul {
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: var(--text-muted);
-	padding-top: 6px;
+	padding-top: 3px;
+}
+
+.section--compact {
+	padding: 24px 0;
+}
+
+.section__body > :last-child {
+	margin-bottom: 0;
+}
+
+.muted {
+	color: var(--text-muted);
+}
+
+.inline-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 28px;
 }
 
 .section__body {
 	min-width: 0;
 }
 
-.lede {
-	font-size: 1.35rem;
-	font-weight: 600;
-	letter-spacing: -0.015em;
-	color: var(--text-strong);
-	line-height: 1.3;
-	margin-bottom: 18px;
-}
 
 .subhead {
 	display: flex;
@@ -379,28 +358,52 @@ ul {
 	flex-wrap: wrap;
 	gap: 10px;
 	font-size: 1rem;
-	margin: 32px 0 14px;
+	margin: 28px 0 10px;
 }
 
-.lede + .subhead {
-	margin-top: 8px;
-}
 
 /* ---------- Skills ---------- */
+.skill-groups {
+	margin: 0;
+}
+
+.skill-groups > div {
+	display: grid;
+	grid-template-columns: 200px minmax(0, 1fr);
+	gap: 4px 24px;
+	padding: 10px 0;
+	border-top: 1px solid var(--line);
+}
+
+.skill-groups > div:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.skill-groups dt {
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: var(--text-muted);
+	line-height: 1.5;
+}
+
+.skill-groups dd {
+	margin: 0;
+}
+
 .skill-list {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 8px;
+	gap: 2px 0;
+	color: var(--text-strong);
+	line-height: 1.5;
 }
 
-.skill-list li {
-	padding: 4px 10px;
-	border: 1px solid var(--line-strong);
-	border-radius: 6px;
-	font-size: 0.875rem;
-	color: var(--text-strong);
-	background: var(--surface);
+.skill-list li:not(:last-child)::after {
+	content: "\00b7";
+	margin: 0 10px;
+	color: var(--text-muted);
 }
 
 .areas {
@@ -411,7 +414,7 @@ ul {
 }
 
 .areas li {
-	padding: 16px 0;
+	padding: 12px 0;
 	border-top: 1px solid var(--line);
 }
 
@@ -443,18 +446,14 @@ ul {
 	border-radius: 4px;
 }
 
-.level--new {
-	color: var(--new);
-	background: var(--new-soft);
-}
 
 /* ---------- Experience ---------- */
 .job {
-	padding: 0 0 36px;
+	padding: 0 0 28px;
 }
 
 .job + .job {
-	padding-top: 36px;
+	padding-top: 28px;
 	border-top: 1px solid var(--line);
 }
 
@@ -504,36 +503,21 @@ ul {
 }
 
 /* ---------- Contact ---------- */
-.contact-list {
-	list-style: none;
-	margin-top: 8px;
-}
 
-.contact-list li {
-	display: grid;
-	grid-template-columns: 96px minmax(0, 1fr);
-	padding: 10px 0;
-	border-top: 1px solid var(--line);
-	overflow-wrap: anywhere;
-}
 
-.contact-list .label {
-	color: var(--text-muted);
-	font-size: 0.9rem;
-}
 
 /* ---------- Footer ---------- */
 .footer {
 	max-width: calc(var(--measure) + var(--gutter));
 	margin: 0 auto;
-	padding: 0 24px 48px;
+	padding: 0 24px 40px;
 	font-size: 0.85rem;
 	color: var(--text-muted);
 }
 
 .footer p {
 	margin: 0;
-	padding-top: 32px;
+	padding-top: 24px;
 	border-top: 1px solid var(--line);
 }
 
@@ -586,16 +570,17 @@ button:focus-visible {
 @media (max-width: 860px) {
 	.section {
 		grid-template-columns: minmax(0, 1fr);
-		gap: 14px;
-		padding: 44px 0;
+		gap: 12px;
+		padding: 32px 0;
+	}
+
+	.section--compact {
+		padding: 22px 0;
+		gap: 8px;
 	}
 
 	.section h2 {
 		padding-top: 0;
-	}
-
-	.glance {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
@@ -606,13 +591,11 @@ button:focus-visible {
 	}
 
 	.nav {
-		gap: 14px;
-		overflow-x: auto;
-		scrollbar-width: none;
+		gap: 16px;
 	}
 
 	.nav a {
-		font-size: 0.82rem;
+		font-size: 0.85rem;
 		white-space: nowrap;
 	}
 
@@ -629,15 +612,37 @@ button:focus-visible {
 	}
 
 	.hero {
-		padding: 48px 0 40px;
+		padding: 40px 0 32px;
+	}
+
+	.tagline {
+		font-size: 1rem;
 	}
 
 	.contact-line {
 		flex-direction: column;
+		gap: 2px;
+	}
+
+	.skill-groups > div {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 2px;
 	}
 
 	.areas {
 		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.areas li {
+		padding: 10px 0;
+	}
+
+	.job {
+		padding-bottom: 24px;
+	}
+
+	.job + .job {
+		padding-top: 24px;
 	}
 
 	.btn {
@@ -646,26 +651,18 @@ button:focus-visible {
 	}
 
 	.footer {
-		padding: 0 16px 40px;
+		padding: 0 16px 32px;
 	}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
 	.brand {
 		display: none;
-	}
-
-	.glance {
-		grid-template-columns: minmax(0, 1fr);
 	}
 }
 
 /* ---------- Print / Save as PDF (text-based, single column) ---------- */
 @media print {
-	@page {
-		margin: 16mm 16mm;
-	}
-
 	:root,
 	:root[data-theme="dark"] {
 		--bg: #ffffff;
@@ -677,20 +674,20 @@ button:focus-visible {
 		--line-strong: #cccccc;
 		--accent: #000000;
 		--accent-soft: transparent;
-		--new: #000000;
-		--new-soft: transparent;
 	}
 
 	body {
-		font-size: 10pt;
-		line-height: 1.4;
+		font-size: 9.5pt;
+		line-height: 1.35;
+	}
+
+	p {
+		margin-bottom: 4pt;
 	}
 
 	.topbar,
 	.skip-link,
 	.cta-row,
-	.cta-note,
-	.glance,
 	.footer {
 		display: none !important;
 	}
@@ -701,34 +698,78 @@ button:focus-visible {
 	}
 
 	.hero {
-		padding: 0 0 12pt;
+		padding: 0 0 8pt;
 		animation: none;
 	}
 
 	.hero h1 {
-		font-size: 22pt;
+		font-size: 20pt;
 	}
 
-	.section {
+	.role {
+		margin-top: 3pt;
+		font-size: 11.5pt;
+	}
+
+	.tagline {
+		max-width: none;
+		margin-top: 4pt;
+		font-size: 9.5pt;
+	}
+
+	.contact-line {
+		flex-direction: row;
+		gap: 2pt 14pt;
+		margin-top: 4pt;
+		font-size: 9pt;
+	}
+
+	.section,
+	.section--compact {
 		display: block;
-		padding: 8pt 0;
+		padding: 6pt 0;
 		animation: none;
 	}
 
 	.section h2 {
-		font-size: 10pt;
+		font-size: 9.5pt;
 		color: #000;
+		padding: 0;
 		margin-bottom: 4pt;
 	}
 
-	.lede {
-		font-size: 10.5pt;
-		margin-bottom: 8pt;
+	.subhead {
+		font-size: 10pt;
+		margin: 6pt 0 3pt;
 	}
 
-	.subhead {
-		font-size: 10.5pt;
-		margin: 10pt 0 6pt;
+	.skill-groups > div {
+		display: block;
+		padding: 1pt 0;
+		border: 0;
+	}
+
+	.skill-groups dt,
+	.skill-groups dd,
+	.skill-list,
+	.skill-list li {
+		display: inline;
+	}
+
+	.skill-groups dt {
+		font-size: 9.5pt;
+		color: #000;
+		font-weight: 600;
+	}
+
+	.skill-groups dt::after {
+		content: ": ";
+	}
+
+	.skill-list li:not(:last-child)::after {
+		content: ", ";
+		margin: 0;
+		color: inherit;
 	}
 
 	.areas {
@@ -736,29 +777,48 @@ button:focus-visible {
 	}
 
 	.areas li {
-		padding: 3pt 0;
+		padding: 1pt 0;
 		border: 0;
 	}
 
-	.skill-list li {
-		border: 0;
+	.areas h4,
+	.areas p {
+		display: inline;
+		font-size: 9.5pt;
+	}
+
+	.areas h4::after {
+		content: ": ";
+	}
+
+	.areas p {
+		color: var(--text);
+	}
+
+	.level {
+		font-size: 7.5pt;
 		padding: 0;
 	}
 
+	.inline-list {
+		gap: 0 14pt;
+	}
+
+	.job h3 {
+		font-size: 10.5pt;
+	}
+
+	.job__meta {
+		margin: 1pt 0 2pt;
+		font-size: 9pt;
+	}
+
+	.job__lead {
+		margin-bottom: 2pt;
+	}
+
 	.job li {
-		margin: 1pt 0;
-	}
-
-	.contact-list li {
-		padding: 3pt 0;
-	}
-
-	.contact-list {
-		margin-top: 4pt;
-	}
-
-	.skill-list li:not(:last-child)::after {
-		content: ",";
+		margin: 0.5pt 0;
 	}
 
 	.job,
@@ -766,12 +826,16 @@ button:focus-visible {
 		break-inside: avoid;
 	}
 
+	.section h2 {
+		break-after: avoid;
+	}
+
 	.job + .job {
-		padding-top: 8pt;
+		padding-top: 5pt;
 	}
 
 	.job {
-		padding-bottom: 8pt;
+		padding-bottom: 5pt;
 	}
 
 	a {

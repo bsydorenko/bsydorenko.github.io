@@ -8,7 +8,7 @@
 	<meta name="description"
 		content="Bohdan Sydorenko, Senior QA Engineer (Full-Stack Testing) with 10+ years across web, API, mobile, and embedded systems. Automation-first with Playwright, TypeScript, CI/CD quality gates, and AI-assisted testing (Claude Code).">
 	<meta name="keywords"
-		content="Senior QA Engineer, Full-Stack Testing, QA Automation, Playwright, Appium, TypeScript, JavaScript, Python, Postman, API Testing, Mobile Testing, Embedded Testing, CI/CD, AI-assisted testing, Claude Code, Bohdan Sydorenko">
+		content="Senior QA Engineer, Full-Stack Testing, QA Automation, Playwright, Appium, TypeScript, JavaScript, Postman, API Testing, Mobile Testing, Embedded Testing, CI/CD, GitHub Actions, GitLab CI, Jenkins, Docker, AI-assisted testing, Claude Code, Java, Selenium, REST Assured, Python, pytest, k6, Allure, Bohdan Sydorenko">
 	<meta name="author" content="Bohdan Sydorenko">
 	<meta name="robots" content="index, follow">
 	<meta name="color-scheme" content="dark light">
@@ -54,7 +54,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="style.css?v=20261013-1">
+	<link rel="stylesheet" href="style.css?v=20261013-2">
 
 	<script type="application/ld+json">
 	{
@@ -87,15 +87,31 @@
 				"Playwright",
 				"TypeScript",
 				"JavaScript",
-				"Python",
 				"Appium",
 				"Postman",
 				"API Testing",
 				"Mobile Testing",
 				"Embedded Testing",
 				"CI/CD Quality Gates",
+				"GitHub Actions",
+				"GitLab CI",
+				"Jenkins",
+				"Docker",
+				"Docker Compose",
 				"AI-assisted Testing",
-				"Claude Code"
+				"Claude Code",
+				"AI-assisted test authoring in Java (Selenium, REST Assured, Maven, Gradle)",
+				"AI-assisted test authoring in Python (pytest)",
+				"Cucumber (BDD, Gherkin)",
+				"SQL",
+				"k6",
+				"Grafana",
+				"Allure",
+				"TestRail",
+				"Qase",
+				"Jira",
+				"Confluence",
+				"Bitbucket"
 			],
 			"description": "Senior QA Engineer with 10+ years across web, API, mobile, and embedded testing. Automation-first with Playwright, TypeScript, CI/CD, and AI-assisted testing."
 		}
@@ -110,11 +126,9 @@
 		<div class="topbar__inner">
 			<a class="brand" href="#top" aria-label="Bohdan Sydorenko, back to top">BS</a>
 			<nav class="nav" aria-label="Sections">
-				<a href="#summary">Summary</a>
 				<a href="#skills">Skills</a>
 				<a href="#experience">Experience</a>
 				<a href="#education">Education</a>
-				<a href="#languages">Languages</a>
 				<a href="#contact">Contact</a>
 			</nav>
 			<button type="button" class="theme-fab" id="theme-toggle" aria-label="Toggle color theme"
@@ -130,7 +144,7 @@
 			<h1>Bohdan Sydorenko</h1>
 			<p class="role">Senior QA Engineer <span class="role__sub">/ Full-Stack Testing</span></p>
 			<p class="tagline">
-				I keep releases green — practical automation and risk-based testing that catch
+				I keep releases green: practical automation and risk-based testing that catch
 				the defects that matter before they reach production.
 			</p>
 
@@ -144,31 +158,18 @@
 			</ul>
 
 			<div class="cta-row">
-				<a href="mailto:bhdnsyd@gmail.com" class="btn btn-primary">Contact me</a>
-				<a href="Bohdan-Sydorenko-Resume.pdf" download class="btn btn-ghost">Download PDF</a>
-				<a href="https://github.com/bsydorenko" target="_blank" rel="noopener noreferrer"
-					class="btn btn-ghost">GitHub</a>
-				<a href="https://www.linkedin.com/in/bsydorenko" target="_blank" rel="noopener noreferrer"
-					class="btn btn-ghost">LinkedIn</a>
+				<a href="Bohdan-Sydorenko-Resume.pdf" download class="btn btn-primary">Download PDF</a>
 			</div>
-			<p class="cta-note">Send your role, tech stack, and timeline by email — I reply with a testing angle.</p>
-
-			<dl class="glance" aria-label="Profile at a glance">
-				<div><dt>Experience</dt><dd>10+ years</dd></div>
-				<div><dt>Coverage</dt><dd>Web, API, Mobile, Embedded</dd></div>
-				<div><dt>Automation</dt><dd>Playwright, TypeScript, CI/CD</dd></div>
-				<div><dt>AI-assisted</dt><dd>Claude Code</dd></div>
-			</dl>
 		</header>
 
 		<section class="section" id="summary" aria-labelledby="summary-h">
 			<h2 id="summary-h">Summary</h2>
 			<div class="section__body">
-				<p class="lede">Quality is a habit, not a phase.</p>
 				<p>
 					Senior QA Engineer with 10+ years in web, API, mobile, and embedded testing.
-					I pair hands-on manual testing with automation in Playwright, TypeScript, Python,
-					and CI/CD workflows — and I increasingly lean on AI-assisted testing to move faster.
+					I pair hands-on manual testing with automation in Playwright, TypeScript, and
+					Continuous Integration/Continuous Delivery (CI/CD) workflows, and use AI-assisted testing
+					(Claude Code) to write and maintain automated tests faster.
 				</p>
 				<p>
 					I focus on outcomes: stronger regression coverage, earlier defect detection, and
@@ -180,20 +181,81 @@
 		<section class="section" id="skills" aria-labelledby="skills-h">
 			<h2 id="skills-h">Skills</h2>
 			<div class="section__body">
-				<p class="lede">What I test, and how deep.</p>
+				<dl class="skill-groups">
+					<div>
+						<dt>Core Test Automation</dt>
+						<dd>
+							<ul class="skill-list">
+								<li>TypeScript</li>
+								<li>JavaScript</li>
+								<li>Playwright</li>
+								<li>Appium</li>
+								<li>Postman</li>
+							</ul>
+						</dd>
+					</div>
+					<div>
+						<dt>AI-Assisted Test Automation (Java, Python)</dt>
+						<dd>
+							<ul class="skill-list">
+								<li>Java (Selenium, REST Assured, Maven, Gradle)</li>
+								<li>Python (pytest)</li>
+								<li>Claude Code</li>
+							</ul>
+						</dd>
+					</div>
+					<div>
+						<dt>BDD &amp; Data</dt>
+						<dd>
+							<ul class="skill-list">
+								<li>Cucumber (Behavior-Driven Development (BDD), Gherkin)</li>
+								<li>SQL</li>
+							</ul>
+						</dd>
+					</div>
+					<div>
+						<dt>CI/CD, Containers &amp; Cloud</dt>
+						<dd>
+							<ul class="skill-list">
+								<li>GitHub Actions</li>
+								<li>GitLab CI</li>
+								<li>Jenkins</li>
+								<li>Docker</li>
+								<li>Docker Compose</li>
+								<li>AWS / GCP / Azure</li>
+							</ul>
+						</dd>
+					</div>
+					<div>
+						<dt>Performance &amp; Monitoring</dt>
+						<dd>
+							<ul class="skill-list">
+								<li>k6</li>
+								<li>Grafana</li>
+							</ul>
+						</dd>
+					</div>
+					<div>
+						<dt>Test Management, Reporting &amp; Collaboration</dt>
+						<dd>
+							<ul class="skill-list">
+								<li>Jira</li>
+								<li>Confluence</li>
+								<li>Bitbucket</li>
+								<li>TestRail</li>
+								<li>Qase</li>
+								<li>Allure</li>
+							</ul>
+						</dd>
+					</div>
+				</dl>
 
-				<h3 class="subhead">Technical Skills</h3>
-				<ul class="skill-list">
-					<li>TypeScript</li>
-					<li>JavaScript</li>
-					<li>Playwright</li>
-					<li>Appium</li>
-					<li>Python</li>
-					<li>Postman</li>
-					<li>Jenkins</li>
-					<li>Docker</li>
-					<li>AWS / GCP / Azure</li>
-				</ul>
+				<h3 class="subhead">AI-Assisted Testing</h3>
+				<p>
+					I use <strong>Claude Code</strong> to write and refactor automated tests in TypeScript, Java, and
+					Python, draft edge-case and negative scenarios, and triage failures and logs. Every generated test
+					is reviewed by me, run locally and in CI, and maintained afterwards.
+				</p>
 
 				<h3 class="subhead">Testing Areas</h3>
 				<ul class="areas">
@@ -222,19 +284,6 @@
 						<p>Mentoring junior QA engineers and improving team workflows through shared practices.</p>
 					</li>
 				</ul>
-
-				<h3 class="subhead">AI-Assisted Testing <span class="level level--new">2026 focus</span></h3>
-				<p>
-					I use <strong>Claude Code</strong> and AI workflows day-to-day in QA: scaffolding Playwright specs
-					from requirements, drafting edge-case and negative scenarios, triaging failures and logs, and
-					speeding up test maintenance. Faster coverage, less boilerplate — humans stay in the loop on risk.
-				</p>
-				<ul class="skill-list">
-					<li>Claude Code</li>
-					<li>AI test generation</li>
-					<li>Prompt-assisted debugging</li>
-					<li>Log &amp; failure triage</li>
-				</ul>
 			</div>
 		</section>
 
@@ -247,7 +296,7 @@
 						<span class="company">International Multi-platform Solutions</span>
 						<span class="company-note">(name on request)</span>
 						<span class="sep" aria-hidden="true">·</span>
-						<span class="date"><time datetime="2021-05">May 2021</time> – Present</span>
+						<span class="date"><time datetime="2021-05">May 2021</time> - Present</span>
 					</p>
 					<p class="job__lead">QA across web, mobile, and embedded projects with an automation-first approach.</p>
 					<ul>
@@ -264,7 +313,7 @@
 					<p class="job__meta">
 						<span class="company">Ring</span>
 						<span class="sep" aria-hidden="true">·</span>
-						<span class="date"><time datetime="2020-08">Aug 2020</time> – <time datetime="2021-04">Apr 2021</time></span>
+						<span class="date"><time datetime="2020-08">Aug 2020</time> - <time datetime="2021-04">Apr 2021</time></span>
 					</p>
 					<p class="job__lead">QA for indoor and outdoor smart-home security and automation products.</p>
 					<ul>
@@ -280,7 +329,7 @@
 					<p class="job__meta">
 						<span class="company">Intellias</span>
 						<span class="sep" aria-hidden="true">·</span>
-						<span class="date"><time datetime="2017-07">Jul 2017</time> – <time datetime="2020-08">Aug 2020</time></span>
+						<span class="date"><time datetime="2017-07">Jul 2017</time> - <time datetime="2020-08">Aug 2020</time></span>
 					</p>
 					<p class="job__lead">QA for a next-generation automotive navigation platform.</p>
 					<ul>
@@ -296,7 +345,7 @@
 					<p class="job__meta">
 						<span class="company">Luxoft</span>
 						<span class="sep" aria-hidden="true">·</span>
-						<span class="date"><time datetime="2013-05">May 2013</time> – <time datetime="2017-07">Jul 2017</time></span>
+						<span class="date"><time datetime="2013-05">May 2013</time> - <time datetime="2017-07">Jul 2017</time></span>
 					</p>
 					<p class="job__lead">Manual QA for embedded set-top-box solutions in satellite and cable TV domains.</p>
 					<ul>
@@ -309,24 +358,23 @@
 			</div>
 		</section>
 
-		<section class="section" id="education" aria-labelledby="education-h">
+		<section class="section section--compact" id="education" aria-labelledby="education-h">
 			<h2 id="education-h">Education</h2>
 			<div class="section__body">
-				<article class="job">
-					<h3><a href="https://kpi.ua/en/" target="_blank" rel="noopener noreferrer">Igor Sikorsky Kyiv Polytechnic Institute (KPI)</a></h3>
-					<p class="job__meta">
-						<span class="company">Master's degree</span>
-						<span class="sep" aria-hidden="true">·</span>
-						<span class="date">Kyiv, Ukraine</span>
-					</p>
-				</article>
+				<p class="edu">
+					<a href="https://kpi.ua/en/" target="_blank" rel="noopener noreferrer"><strong>Igor Sikorsky Kyiv Polytechnic Institute (KPI)</strong></a>
+					<span class="sep" aria-hidden="true">·</span>
+					Master's degree
+					<span class="sep" aria-hidden="true">·</span>
+					<span class="muted">Kyiv, Ukraine</span>
+				</p>
 			</div>
 		</section>
 
-		<section class="section" id="languages" aria-labelledby="languages-h">
+		<section class="section section--compact" id="languages" aria-labelledby="languages-h">
 			<h2 id="languages-h">Languages</h2>
 			<div class="section__body">
-				<ul>
+				<ul class="inline-list">
 					<li>English: Upper-Intermediate (B2)</li>
 					<li>Ukrainian: Native</li>
 				</ul>
@@ -336,14 +384,15 @@
 		<section class="section" id="contact" aria-labelledby="contact-h">
 			<h2 id="contact-h">Contact</h2>
 			<div class="section__body">
-				<p>Open to Senior QA and Full-Stack Testing roles. Full CV / resume available on request.</p>
-				<ul class="contact-list">
-					<li><span class="label">Email</span> <a href="mailto:bhdnsyd@gmail.com">bhdnsyd@gmail.com</a></li>
-					<li><span class="label">GitHub</span> <a href="https://github.com/bsydorenko" target="_blank"
-							rel="noopener noreferrer">github.com/bsydorenko</a></li>
-					<li><span class="label">LinkedIn</span> <a href="https://www.linkedin.com/in/bsydorenko" target="_blank"
-							rel="noopener noreferrer">linkedin.com/in/bsydorenko</a></li>
-				</ul>
+				<p>
+					Open to Senior QA and Full-Stack Testing roles. Send your role, tech stack, and timeline
+					by email. I reply with a testing angle.
+				</p>
+				<div class="cta-row">
+					<a href="mailto:bhdnsyd@gmail.com" class="btn btn-primary">Email me</a>
+					<a href="https://www.linkedin.com/in/bsydorenko" target="_blank" rel="noopener noreferrer"
+						class="btn btn-ghost">Message on LinkedIn</a>
+				</div>
 			</div>
 		</section>
 	</main>
