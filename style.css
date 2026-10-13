@@ -682,8 +682,8 @@ button:focus-visible {
 	}
 
 	body {
-		font-size: 10.5pt;
-		line-height: 1.45;
+		font-size: 10pt;
+		line-height: 1.4;
 	}
 
 	.topbar,
@@ -706,23 +706,29 @@ button:focus-visible {
 	}
 
 	.hero h1 {
-		font-size: 24pt;
+		font-size: 22pt;
 	}
 
 	.section {
 		display: block;
-		padding: 12pt 0;
+		padding: 8pt 0;
 		animation: none;
 	}
 
 	.section h2 {
-		font-size: 11pt;
+		font-size: 10pt;
 		color: #000;
-		margin-bottom: 6pt;
+		margin-bottom: 4pt;
 	}
 
 	.lede {
-		font-size: 11pt;
+		font-size: 10.5pt;
+		margin-bottom: 8pt;
+	}
+
+	.subhead {
+		font-size: 10.5pt;
+		margin: 10pt 0 6pt;
 	}
 
 	.areas {
@@ -730,13 +736,25 @@ button:focus-visible {
 	}
 
 	.areas li {
-		padding: 4pt 0;
+		padding: 3pt 0;
 		border: 0;
 	}
 
 	.skill-list li {
 		border: 0;
 		padding: 0;
+	}
+
+	.job li {
+		margin: 1pt 0;
+	}
+
+	.contact-list li {
+		padding: 3pt 0;
+	}
+
+	.contact-list {
+		margin-top: 4pt;
 	}
 
 	.skill-list li:not(:last-child)::after {
@@ -749,11 +767,11 @@ button:focus-visible {
 	}
 
 	.job + .job {
-		padding-top: 10pt;
+		padding-top: 8pt;
 	}
 
 	.job {
-		padding-bottom: 10pt;
+		padding-bottom: 8pt;
 	}
 
 	a {

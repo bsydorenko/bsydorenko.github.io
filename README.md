@@ -22,6 +22,7 @@ Live Demo: [bsydorenko.github.io](https://bsydorenko.github.io)
 - `_config.yml` - Jekyll configuration.
 - `favicon.svg` - Site icon.
 - `og-image.png` - Social sharing banner (1200x630 @2x).
+- `Bohdan-Sydorenko-Resume.pdf` - Downloadable A4 PDF resume (text-based), linked as "Download PDF" on the page; regenerate after content changes.
 
 ## Local Development
 
