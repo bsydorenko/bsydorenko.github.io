@@ -1,21 +1,23 @@
 # Bohdan Sydorenko | Senior QA Engineer (Full-Stack Testing)
 
-Personal portfolio website with resume-focused content and a QA-first presentation style.
+Personal resume / portfolio website: minimal, typography-led, and ATS-friendly.
+
+Contact: [bhdnsyd@gmail.com](mailto:bhdnsyd@gmail.com)
 
 Live Demo: [bsydorenko.github.io](https://bsydorenko.github.io)
 
 ## Technologies Used
 
 - HTML5 and CSS3
-- Google Fonts (Bricolage Grotesque, IBM Plex Sans, JetBrains Mono)
+- Google Fonts (Geist, Geist Mono)
 - GitHub Pages
 - Jekyll support via `_config.yml`
-- JSON-LD `Person` structured data for SEO
+- JSON-LD `ProfilePage` + `Person` structured data for SEO
 
 ## Project Structure
 
 - `index.html` - Page structure, portfolio content, and structured data.
-- `style.css` - "Green Build" design system: theme tokens, layout, animation, responsive styling.
+- `style.css` - "Quiet Editorial" design system: theme tokens, layout, responsive and print styles.
 - `theme-toggle.js` - Theme toggle behavior and persistence logic.
 - `_config.yml` - Jekyll configuration.
 - `favicon.svg` - Site icon.
@@ -31,11 +33,10 @@ Then open `http://localhost:3000`.
 
 ## Features
 
-- "Green Build" visual direction — the page reads as a passing test report
-- Hero status panel with a passing-suite summary (`BUILD: PASSING`)
-- Coverage report for testing domains and proficiency levels
-- Dedicated AI-Assisted Testing block (Claude Code, AI workflows)
-- Experience presented as a timeline
+- "Quiet Editorial" visual direction: neutral palette, one accent, Geist typography
+- Single reading column in the DOM (section labels sit in a left gutter on desktop only)
+- ATS-friendly structure: one `h1`, standard section names (Summary, Skills, Experience, Contact), plain-text contacts, lists instead of visual widgets
+- Print stylesheet: "Print -> Save as PDF" produces a clean, text-based one-column resume
 - Light/dark themes with no flash-of-wrong-theme (inline pre-paint theme)
 - Accessible: skip link, focus states, `prefers-reduced-motion`
 - Responsive layout for mobile, tablet, and desktop
